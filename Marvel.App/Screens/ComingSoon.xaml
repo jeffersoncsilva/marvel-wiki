@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="Marvel.App.Screens.Home"
+    x:Class="Marvel.App.Screens.ComingSoon"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:vm="clr-namespace:Mavel.ViewModels.Screens;assembly=Mavel.ViewModels"
     Title="{Binding Title}"
-    x:DataType="vm:HomeViewModel"
+    x:DataType="vm:ComingSoonViewModel"
     Background="{StaticResource Primary}">
-
     <VerticalStackLayout>
         <Label
             HorizontalOptions="Center"
-            Text="Bem vindo ao app que lista as coisas da Marvel!"
+            Text="Em breve"
             VerticalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>

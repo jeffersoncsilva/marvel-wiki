@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Marvel.App.Extension;
+using Microsoft.Extensions.Logging;
 using Syncfusion.Maui.Core.Hosting;
 
 
@@ -22,6 +23,8 @@ namespace Marvel.App
                     fonts.AddFont("Merienda-Semibold.ttf", "Semibold");
                 });
             builder.ConfigureSyncfusionCore();
+            builder.Services.AddDependencyViewModels();
+            builder.Services.AddDependencyScreens();
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
